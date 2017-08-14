@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    >
+
+    <Button
+        android:id="@+id/btnPDF"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:onClick="showPdf"
+        android:text="PDF"
+        android:layout_above="@+id/btnAlert"
+        android:layout_alignLeft="@+id/btnAlert"
+        android:layout_alignStart="@+id/btnAlert"
+        android:layout_marginBottom="55dp" />
+
+    <Button
+        android:id="@+id/btnAlert"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:onClick="Alert"
+        android:text="Alert"
+        android:layout_above="@+id/btnSMS"
+        android:layout_alignLeft="@+id/btnSMS"
+        android:layout_alignStart="@+id/btnSMS"
+        android:layout_marginBottom="44dp" />
+
+    <Button
+        android:id="@+id/btnSMS"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="51dp"
+        android:onClick="showSMS"
+        android:text="SMS"
+        android:layout_above="@+id/btnNotification"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnNotification"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="166dp"
+        android:onClick="showNotification"
+        android:text="Notification" />
+
+
+
+
+</RelativeLayout>
